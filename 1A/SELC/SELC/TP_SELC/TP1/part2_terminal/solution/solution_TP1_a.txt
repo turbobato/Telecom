@@ -1,0 +1,39 @@
+Auto-évaluation: quelles commandes connaissez vous? Pour chaque commande connue,
+quelle est son action, comment fonctionne-t-elle?
+
+Solution à la partie II.3
+
+   copier SELC-liste.txt dans le répertoire donnees:
+   $cp SELC-liste.txt donnees
+
+   Aller dans le répértoire donnees:
+   $cd donnees
+
+   visualiser le contenu de ce fichier SELC-liste.txt :
+   $less SELC-liste.txt, (la barre d'espace fait passer de page en page, pour quitter : taper q).
+
+   trier ce fichier par groupes (sortie sur le terminal) :
+   $sort -k3 SELC-liste.txt
+
+   effectuer à nouveau ce tri, en sortant le résultat dans un fichier (ici INF104-groupes.txt) :
+   $sort -k3 SELC-liste.txt > INF104-groupes.txt
+
+   vérifier le contenu de ce dernier fichier en utilisant less,
+   $less INF104-groupes.txt
+
+   extraire le groupe 3 de INF104-groupes.txt, la sortie se fait sur le terminal :
+   $grep 3 INF104-groupes.txt
+
+   faire même chose, mais en rangeant la liste extraite dans un fichier appelé G3.txt:
+   $grep 3 INF104-groupes.txt > G3.txt
+
+   vérifier en faisant less G3.txt ou cat G3.txt
+   $less G3.txt
+
+   extraire le groupe 1 de INF104-groupes.txt et le copier dans le fichier G1G2.txt, vérifier;
+   $grep 1 INF104-groupes.txt > G1G2.txt
+   $less G1G2.txt
+
+   extraire le groupe 2 de INF104-groupes.txt et le concatener à G1G2.txt, vérifier;
+   $grep 2 INF104-groupes.txt >> G1G2.txt
+   $less G1G2.txt

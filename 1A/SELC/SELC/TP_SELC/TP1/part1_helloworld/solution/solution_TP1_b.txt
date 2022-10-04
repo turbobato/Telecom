@@ -1,0 +1,10 @@
+Ce TP vous montre comment:
+   - importer un ensemble de sources dans atom
+   - produire un exécutable avec gcc
+   - lancer le fichier exécutable obtenu grâce à gcc.
+
+Si vous cherchez une solution plus élaborée à ce TP, c'est que vous n'avez
+pas compris cet objectif...
+
+Auto-évaluation: suis-je capable de relancer atom? de produire l'exécutable? de
+le lancer?
